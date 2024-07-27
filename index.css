@@ -1,6 +1,10 @@
 /* CUSTOM FONTS */
 
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/custom-font.ttf') format('truetype');
+    font-family: 'The Bold Font';
+    src: url('./assets/fonts/the_bold_font/THE BOLD FONT - FREE VERSION - 2023.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'The Bold Font';
 }
