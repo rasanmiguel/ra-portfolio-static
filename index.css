@@ -1,0 +1,6 @@
+/* CUSTOM FONTS */
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/custom-font.ttf') format('truetype');
+}
