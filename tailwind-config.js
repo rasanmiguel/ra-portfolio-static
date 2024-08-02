@@ -4,6 +4,7 @@ tailwind.config = {
         extend: {
             colors: {
                 clifford: '#da373d',
+                yellow: 'yellow'
             },
             fontFamily: {
                 josefin: ["Josefin Sans", 'sans-serif'],
