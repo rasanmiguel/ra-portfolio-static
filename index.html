@@ -31,135 +31,147 @@
     <title>RA's Personal Website</title>
 </head>
 
-<body class="">
-    <!-- Navbar -->
+<body class="flex items-center justify-center">
+    <div id="main-container" class="w-full max-w-7xl p-10">
+        <!-- Navbar -->
 
-    <!-- Hero Section -->
-    <section class="m-10">
-        <header class="text-white font-boldfont">
-            <h1 class="text-7xl">Hi, I'm <span class="text-yellow">RA</span></h1>
-            <h2 class="text-2xl">Aspiring Fullstack Developer</h2>
-        </header>
+        <!-- Hero Section -->
+        <section>
+            <!-- Hero Section Header-->
+            <header class="text-white font-boldfont">
+                <h1 class="text-7xl">Hi there, I'm <span class="text-yellow">RA!</span></h1>
+                <h2 class="text-4xl text-tangerine">Aspiring Fullstack Developer</h2>
+            </header>
 
-        <article class="text-white font-josefin text-base/5 mt-4">
-            <p class="mb-4">I am a fullstack developer with an interest in cloud technology. I started my tech
-                career
-                learning Python
-                since
-                it is widely used in Geographic Information Systems (GIS), which was a big focus of my
-                undergraduate
-                degree.
-                Somehow, I ended up being interested in web development and picked up JavaScript along the way.
-            </p>
+            <!-- Hero Section Article -->
+            <article class="text-white font-josefin text-2xl/8 mt-6">
+                <p class="mb-4">I am a fullstack developer with an interest in cloud technology. I started my tech
+                    career
+                    learning Python
+                    since
+                    it is widely used in Geographic Information Systems (GIS), which was a big focus of my
+                    undergraduate
+                    degree.
+                    Somehow, I ended up being interested in web development and picked up JavaScript along the way.
+                </p>
 
-            <p class="mb-4">I plan to revisit GIS someday and hopefully mix it with my newfound Python and JavaScript
-                skillset to
-                create
-                fun
-                projects, but for now, my focus is on fullstack development and the cloud.</p>
+                <p class="mb-4">I plan to revisit GIS someday and hopefully mix it with my newfound Python and
+                    JavaScript
+                    skillset to
+                    create
+                    fun
+                    projects, but for now, my focus is on fullstack development and the cloud.</p>
 
-            <p>As a developer, I primarily use the MERN (MongoDB, Express.js, React.js, Node.js) stack on
-                my
-                projects. Below is the list of my skills.
-            </p>
-        </article>
-    </section>
+                <p>As a developer, I primarily use the MERN (MongoDB, Express.js, React.js, Node.js) stack on
+                    my
+                    projects. Below is the list of my skills.
+                </p>
+            </article>
+        </section>
 
+        <!-- Skills Section -->
+        <section class="py-10">
+            <!-- Skills Section Header-->
+            <header class="text-white font-boldfont">
+                <h1 class="text-4xl text-tangerine">Skills and Technologies</h1>
+            </header>
 
-    <!-- Skills Section -->
-    <section class="m-10">
-        <header class="text-white font-boldfont">
-            <h1 class="text-2xl">Skills</h1>
-        </header>
+            <!-- Skills Section Article -->
+            <article class="flex">
+                <!-- Burger 3d Section -->
+                <div class="flex-1">
+                    <p class="text-white">Burger Section here lol</p>
+                </div>
 
-        <div class="flex">
-            <!-- Burger 3d Section -->
-            <div class="flex-1">
-                <p class="text-white">Burger Section here lol</p>
-            </div>
-
-            <!-- Skills Icons Section -->
-            <div class="flex flex-1 flex-col text-center items-center justify-center p-5">
-                <div class="w-full">
-                    <h2 class="text-white font-boldfont">Frontend</h2>
-                    <div class="grid grid-cols-5 gap-x-10">
-                        <div class="text-white p-2 flex flex-col items-center">
-                            <img src="./assets/images/HTML5.png">
-                            <p class="text-xs font-josefin">HTML5</p>
+                <!-- Skills Icons Section -->
+                <div class="flex flex-1 flex-col text-center items-center justify-center p-5 text-2xl">
+                    <div>
+                        <!-- Frontend -->
+                        <div class="w-full">
+                            <h2 class="text-yellow font-boldfont">Frontend</h2>
+                            <div
+                                class="pt-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 text-sm font-josefin">
+                                <div class="text-white flex flex-col items-center justify-center">
+                                    <img src="./assets/images/HTML5.png" class="w-16 h-16">
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="text-white flex flex-col items-center justify-center">
+                                    <img src="./assets/images/CSS3.png" class="w-16 h-16">
+                                    <p>CSS3</p>
+                                </div>
+                                <div class="text-white flex flex-col items-center justify-center">
+                                    <img src="./assets/images/Tailwind.png" class="w-16 h-16">
+                                    <p>Tailwind</p>
+                                </div>
+                                <div class="text-white flex flex-col items-center justify-center">
+                                    <img src="./assets/images/Bootstrap.png" class="w-16 h-16">
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="text-white flex flex-col items-center justify-center">
+                                    <img src="./assets/images/React.png" class="w-16 h-16">
+                                    <p class="text-sm font-josefin">React</p>
+                                </div>
+                                <div class="text-white flex flex-col items-center justify-center">
+                                    <img src="./assets/images/ThreeJS-white.png" class="w-16 h-16">
+                                    <p>ThreeJS</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="text-white p-2">
-                            <img src="./assets/images/CSS3.png">
-                            <p class="text-xs font-josefin">CSS3</p>
+                        <!-- Tools -->
+                        <div class="w-full">
+                            <h2 class="text-yellow font-boldfont">Tools</h2>
+                            <div
+                                class="pt-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 text-base font-josefin">
+                                <div class="text-white p-2 flex flex-col items-center justify-center">
+                                    <img src="./assets/images/Git.png" class="w-16 h-16">
+                                    <p>Git</p>
+                                </div>
+                                <div class="text-white p-2 flex flex-col items-center justify-center">
+                                    <img src="./assets/images/Visual Studio Code (VS Code).png" class="w-16 h-16">
+                                    <p>VSCode</p>
+                                </div>
+                                <div class="text-white p-2 flex flex-col items-center justify-center">
+                                    <img src="./assets/images/Postman.png" class="w-16 h-16">
+                                    <p>Postman</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-white p-2">
-                            <img src="./assets/images/Tailwind.png">
-                            <p class="text-xs font-josefin">Tailwind</p>
-                        </div>
-                        <div class="text-white p-2">
-                            <img src="./assets/images/Bootstrap.png">
-                            <p class="text-xs font-josefin">Bootstrap</p>
-                        </div>
-                        <div class="text-white p-2">
-                            <img src="./assets/images/React.png">
-                            <p class="text-xs font-josefin">React</p>
-                        </div>
-                        <div class="bg-gray-700 text-white p-2">
-                            <img src="./assets/images/ThreeJS.png">
-                            <p class="text-xs font-josefin">ThreeJS</p>
+
+                        <!-- Backend -->
+                        <div class="w-full">
+                            <h2 class="text-yellow font-boldfont">Backend</h2>
+                            <div
+                                class="pt-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 text-base font-josefin">
+                                <div class="text-white p-2 flex flex-col items-center justify-center">
+                                    <img src="./assets/images/Express-white.png" class="w-16 h-16">
+                                    <p>Express</p>
+                                </div>
+                                <div class="text-white p-2 flex flex-col items-center justify-center">
+                                    <img src="./assets/images/Node.js.png" class="w-16 h-16">
+                                    <p>NodeJS</p>
+                                </div>
+                                <div class="text-white p-2 flex flex-col items-center justify-center">
+                                    <img src="./assets/images/MongoDB.png" class="w-16 h-16">
+                                    <p>MongoDB</p>
+                                </div>
+                                <div class="text-white p-2 flex flex-col items-center justify-center">
+                                    <img src="./assets/images/PostgresSQL.png" class="w-16 h-16">
+                                    <p>PostgreSQL</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </article>
+        </section>
 
-                <div class="w-full">
-                    <h2 class="text-white font-boldfont">Tools</h2>
-                    <div class="grid grid-cols-5 gap-10">
-                        <div class="text-white p-2">
-                            <img src="./assets/images/Git.png">
-                            <p class="text-xs font-josefin">Git</p>
-                        </div>
-                        <div class="text-white p-2">
-                            <img src="./assets/images/Visual Studio Code (VS Code).png">
-                            <p class="text-xs font-josefin">VSCode</p>
-                        </div>
-                        <div class="text-white p-2">
-                            <img src="./assets/images/Postman.png">
-                            <p class="text-xs font-josefin">Postman</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Project Section -->
 
-                <div class="w-full">
-                    <h2 class="text-white font-boldfont">Backend</h2>
-                    <div class="grid grid-cols-5 gap-10">
-                        <div class="text-white p-2">
-                            <img src="./assets/images/Express.png">
-                            <p class="text-xs font-josefin">Express</p>
-                        </div>
-                        <div class="text-white p-2">
-                            <img src="./assets/images/Node.js.png">
-                            <p class="text-xs font-josefin">NodeJS</p>
-                        </div>
-                        <div class="text-white p-2">
-                            <img src="./assets/images/MongoDB.png">
-                            <p class="text-xs font-josefin">MongoDB</p>
-                        </div>
-                        <div class="text-white p-2">
-                            <img src="./assets/images/PostgresSQL.png">
-                            <p class="text-xs font-josefin">PostgreSQL</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Extras Section -->
 
-    </section>
-
-    <!-- Project Section -->
-
-    <!-- Extras Section -->
-
-    <script type="module" src="js/threejs/main.js"></script>
+        <script type="module" src="js/threejs/main.js"></script>
+    </div>
 </body>
 
 </html>
