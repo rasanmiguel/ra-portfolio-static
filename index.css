@@ -6,12 +6,12 @@
 
 /* == [Hero Section] == */
 
-/* Hero Section Container */
+/* Pre-tailwind CSS for Hero Section
 .hero-section {
     padding: 4%;
 }
 
-/* Hero Section Text */
+
 .hero-section h1 {
     font-family: 'The Bold Font';
     color: white;
@@ -36,7 +36,7 @@
     font-size: 1.6rem;
     margin: 20px 5px 20px 5px;
 }
-
+*/
 
 /* Body */
 body {
