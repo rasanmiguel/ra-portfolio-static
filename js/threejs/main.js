@@ -1,3 +1,4 @@
+/*
 import * as THREE from 'three'
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/loaders/GLTFLoader.js';
 
@@ -12,3 +13,7 @@ document.body.appendChild(renderer.domElement);
 
 // Add lighting
 const ambientLight = new
+*/
+
+
+
