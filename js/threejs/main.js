@@ -44,7 +44,6 @@ container.style.height = `${desiredHeight}px`;
 camera.aspect = desiredWidth / desiredHeight;
 camera.updateProjectionMatrix();
 
-
 // Animation
 const animate = () => {
     requestAnimationFrame(animate);
@@ -66,3 +65,5 @@ const updateSize = () => {
 
 window.addEventListener('resize', updateSize);
 updateSize(); // Initial size update
+
+
