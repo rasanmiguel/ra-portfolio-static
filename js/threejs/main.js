@@ -28,7 +28,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('burger-model').appendChild(renderer.domElement); // Append renderer to container
 
 // Renderer canvas size controls
-const desiredWidth = 850;
+const desiredWidth = 700;
 const desiredHeight = 650;
 renderer.setSize(desiredWidth, desiredHeight);
 
