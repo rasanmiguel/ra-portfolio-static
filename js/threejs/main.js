@@ -6,7 +6,7 @@ const scene = new THREE.Scene();
 
 // Camera
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.z = 5;
+camera.position.z = 2.2;
 
 // Model Loader
 const loader = new GLTFLoader();
@@ -27,11 +27,29 @@ const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // A
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('burger-model').appendChild(renderer.domElement); // Append renderer to container
 
+// Renderer canvas size controls
+const desiredWidth = 850;
+const desiredHeight = 650;
+renderer.setSize(desiredWidth, desiredHeight);
+
+// Append renderer's canvas to container
+const container = document.getElementById('burger-model');
+container.appendChild(renderer.domElement);
+
+// Set container size 
+container.style.width = `${desiredWidth}px`;
+container.style.height = `${desiredHeight}px`;
+
+// Update camera aspect ratio
+camera.aspect = desiredWidth / desiredHeight;
+camera.updateProjectionMatrix();
+
+
 // Animation
 const animate = () => {
     requestAnimationFrame(animate);
     if (model) {
-        model.rotation.y += 0.01;
+        model.rotation.y += 0.004;
     }
     renderer.render(scene, camera);
 };
@@ -41,13 +59,10 @@ animate();
 
 // Update camera aspect ratio and renderer size
 const updateSize = () => {
-    const width = container.clientWidth;
-    const height = container.clientHeight;
-    renderer.setSize(width, height);
-    camera.aspect = width / height;
+    renderer.setSize(desiredWidth, desiredHeight);
+    camera.aspect = desiredWidth / desiredHeight;
     camera.updateProjectionMatrix();
 };
 
-// Resize fix
 window.addEventListener('resize', updateSize);
 updateSize(); // Initial size update
