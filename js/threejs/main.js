@@ -23,9 +23,9 @@ loader.load('./assets/3d/burger-textured.glb',
 );
 
 // Renderer
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // Alpha set to true makes background transparent
 renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+document.getElementById('burger-model').appendChild(renderer.domElement); // Append renderer to container
 
 // Animation
 const animate = () => {
@@ -38,3 +38,16 @@ const animate = () => {
 
 // Start Animation
 animate();
+
+// Update camera aspect ratio and renderer size
+const updateSize = () => {
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    renderer.setSize(width, height);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+};
+
+// Resize fix
+window.addEventListener('resize', updateSize);
+updateSize(); // Initial size update
