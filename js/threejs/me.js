@@ -61,7 +61,7 @@ camera.updateProjectionMatrix();
 const animate = () => {
     requestAnimationFrame(animate);
     if (model) {
-        model.rotation.y += 0.002;
+        model.rotation.y += 0.001;
     }
     renderer.render(scene, camera);
 };
